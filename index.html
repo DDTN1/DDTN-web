@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DDTN – Hjem</title>
+  <meta name="description" content="DDTN – informasjon, arrangementer og timeplan." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+    <a class="brand" href="index.html">
+    <img src="assets/images/Druze_star.png" alt="Drusisk stjerne" class="logo">
+    <span>DDTN</span>
+    </a>
+      <button class="menu-btn" type="button" aria-label="Åpne meny" aria-expanded="false" data-menu-button>
+        ☰
+      </button>
+
+      <nav class="site-nav" data-menu>
+        <a href="index.html">Hjem</a>
+        <a href="om-oss.html">Om oss</a>
+        <a href="tro.html">Drusisk tro</a>
+        <a href="events.html">Arrangementer</a>
+        <a href="timeplan.html">Timeplan</a>
+        <a href="kontakt.html">Kontakt oss</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero card">
+      <div class="pad">
+        <h1>Det drusiske trossamfunn i Norge (DDTN)</h1>
+        <p class="muted">
+          Vi bygger fellesskap, bevarer kulturarv og skaper trygge møteplasser for drusere i Norge.
+        </p>
+
+        <div class="pill-row" aria-label="Hurtiglenker">
+          <a class="pill" href="events.html">Se kommende arrangementer</a>
+          <a class="pill" href="timeplan.html">Se ukens timeplan</a>
+          <a class="pill" href="kontakt.html">Kontakt oss</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <div class="pad">
+          <h2>Neste arrangement</h2>
+          <div class="list" id="nextEvent">
+            <p class="muted">Legg inn arrangementer på siden “Arrangementer”.</p>
+          </div>
+          <a class="btn" href="events.html">Gå til arrangementer</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="pad">
+          <h2>Denne uken</h2>
+          <p class="muted">Kort oversikt – full ukeplan finnes på Timeplan.</p>
+          <ul class="bullets">
+            <li>Mandag: Undervisning</li>
+            <li>Onsdag: Ungdomsaktivitet</li>
+            <li>Fredag: Samling</li>
+            <li>Søndag: Kultur og familie</li>
+          </ul>
+          <a class="btn" href="timeplan.html">Gå til timeplan</a>
+        </div>
+      </article>
+    </section>
+    <section class="card">
+    <div class="pad">
+        <h2>Kort om drusisk tro</h2>
+        <p class="muted"></p>
+
+        <div class="grid two">
+        <div class="info">
+            <h3>Enhetens folk (ahl al-tawḥīd)</h3>
+            <p></p>
+        </div>
+        <div class="info">
+            <h3>Etikk i sentrum</h3>
+            <p></p>
+        </div>
+        </div>
+
+        <div class="spacer"></div>
+        <a class="btn" href="tro.html">Les mer på “Drusisk tro”</a>
+    </div>
+    </section>
+
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="muted">© <span id="year"></span> DDTN</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
