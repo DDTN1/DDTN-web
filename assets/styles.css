@@ -457,3 +457,56 @@ textarea:focus{
   font-size:14px;
   color:#ccc;
 }
+
+.image-cards {
+  gap: 24px;
+}
+
+.with-image {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 0;
+}
+
+.with-image .media {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.with-image .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.with-image .content {
+  padding: 20px;
+}
+
+.with-image h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.with-image p {
+  margin: 0;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* På mobil */
+@media (max-width: 768px) {
+  .with-image .media {
+    height: 200px;
+  }
+
+  .with-image .content {
+    padding: 16px;
+  }
+}
