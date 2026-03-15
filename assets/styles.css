@@ -526,3 +526,33 @@ textarea:focus{
     padding: 30px 20px;
   }
 }
+/* CONTACT FOOTER ROW */
+.contact-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* MOBIL */
+@media (max-width: 600px){
+  .contact-row{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.vipps-qr{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.vipps-qr-img{
+  width: 70px;
+  border-radius: 12px;
+  margin-top: 8px;
+}
