@@ -222,7 +222,7 @@ p{
 
 .grid.two{
   grid-template-columns: 1fr 1fr;
-  align-items: start;
+  align-items: stretch;
 }
 
 /* BUTTONS / PILLS */
@@ -413,10 +413,16 @@ textarea:focus{
   color: #ccc;
 }
 
+.vipps-number{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff5b24;
+}
+
 /* IMAGE CARDS */
 .image-cards{
   gap: 24px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .with-image{
@@ -426,27 +432,35 @@ textarea:focus{
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .with-image .media{
   width: 100%;
-  background: #f4f4f4;
+  height: 240px; /* samme størrelse på alle bilder */
   overflow: hidden;
+  background: #f4f4f4;
+  flex-shrink: 0;
 }
 
 .with-image .media img{
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* alle bilder fyller boksen likt */
   display: block;
 }
 
 .with-image .content{
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .with-image h3{
-  margin-top: 0;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
 }
 
 .with-image p{
@@ -454,18 +468,6 @@ textarea:focus{
   line-height: 1.7;
   color: #444;
 }
-
-
-.with-image.fixed-image .media{
-  aspect-ratio: 16 / 10;
-}
-
-.with-image.fixed-image .media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 
 /* MOBILE */
 @media (max-width: 900px){
@@ -512,6 +514,10 @@ textarea:focus{
 }
 
 @media (max-width: 768px){
+  .with-image .media{
+    height: 210px;
+  }
+
   .with-image .content{
     padding: 16px;
   }

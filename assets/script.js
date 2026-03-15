@@ -27,14 +27,14 @@ if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 const eventsData = [
   {
     title: "Kulturkveld",
-    date: "2026-02-07",
+    date: "2026-04-07",
     time: "18:00",
     place: "Oslo",
     desc: "En kveld med fellesskap, samtaler og kultur."
   },
   {
     title: "Familiesamling",
-    date: "2026-02-21",
+    date: "2026-03-21",
     time: "14:00",
     place: "Oslo",
     desc: "Sosial samling for familier og barn."
